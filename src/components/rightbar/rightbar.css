@@ -1,0 +1,95 @@
+.rightbar{
+    flex:3.5;
+}
+.rightbarWrapper{
+    padding: 20px 20px 0 0;
+}
+.birthdayImg{
+    width: 40px;
+    margin-right: 5px;
+
+}
+.birthdayText{
+    font-weight: 400;
+    font-size: 14px;
+}
+.birthdayContainer{
+    display: flex;
+    align-items: center;
+}
+.rightbarAd{
+    width: 100%;
+    margin: 15px 0;
+    opacity: 0.9;
+    border :2px solid black;
+    border-radius: 10px;
+}
+.rightbarFriendList{
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}
+.rightbarFriend{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 139, 0.081);
+    background-color:#1876f224;
+    margin-bottom: 3px;
+
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.rightbarPorıfileImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border:2px solid green;
+    cursor: pointer;
+}
+
+.rightbarUsername{
+    font-weight: 500;
+    letter-spacing: 0.6px;
+   
+
+}
+
+
+.rightbarProfileImgContainer{
+    margin-top: 15px;
+    margin-right: 10px;
+    position: relative;
+    
+}
+
+.rightbarProfileImgContainer .onlineBadge{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    top:-3px;
+    right: 1px;
+    border: 2px solid white;
+    
+
+}
+.userBox{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+
+}
+.messenger{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
