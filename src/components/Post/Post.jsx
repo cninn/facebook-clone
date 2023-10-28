@@ -3,7 +3,24 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import InsertCommentIcon from "@mui/icons-material/InsertComment";
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-export default function Post() {
+import{ Users} from '../../dummyData'
+import { useState } from "react";
+
+
+
+export default function Post({post}) {
+
+
+const [like,setLike] = useState(post.like)
+const [isLiked,setIsLiked] = useState(false)
+
+
+
+const likeHandler = ()=>{
+    setLike(isLiked ? like-1 : like +1)
+    setIsLiked(!isLiked)
+}
+
   return (
     <div className="post">
       <div className="postWrapper">
@@ -11,28 +28,28 @@ export default function Post() {
           <div className="postTopLeft">
             <img
               className="postProfileImg"
-              src="/assets/person/person8.jpeg"
+              src={Users.filter(u=>u.id=== post.userId)[0].profilePicture}
               alt="..."
             />
-            <span className="postUserName">Deniz Yurdum</span>
-            <span className="postDate">5 gün önce.</span>
+            <span className="postUserName">{Users.filter(u=>u.id=== post.userId)[0].username}</span>
+            <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">
             <MoreVertIcon className="postIcon" />
           </div>
         </div>
         <div className="postCenter">
-          <span className="postText">Selam! Bu benim ilk gönderim.</span>
+          <span className="postText">{post?.desc}</span>
          
-          <img className="postImage" src="/assets/post/post4.jpeg" alt="..." />
+          <img className="postImage" src={post.photo} alt="..." />
         
         
         </div>
         <div className="postBottom">
           <div className="postBottomLeft">
             <div className="likeIcons">
-            <FavoriteIcon htmlColor="red" className="likeIcon"/>
-           < ThumbUpIcon htmlColor="blue"className="likeIcon"/>
+            <FavoriteIcon htmlColor="red" onClick={likeHandler}  className="likeIcon"/>
+           < ThumbUpIcon htmlColor="blue" onClick={likeHandler}   className="likeIcon"/>
           
             </div>
      
@@ -40,13 +57,13 @@ export default function Post() {
           </div>
           <div className="postBottomRight">
             <div>
-            <span className="postLikeCounter">1M Beğeni</span>
+            <span className="postLikeCounter">{`${like} Beğenme`}</span>
             </div>
             
                 <div className="postCount">
                 <InsertCommentIcon className="postCommentIcon" />
            
-           <span className="postCommentText">688 Yorum</span>
+           <span className="postCommentText">{`${post.comment} Yorum`}</span>
                 </div>
     
           </div>

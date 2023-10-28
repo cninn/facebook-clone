@@ -9,6 +9,10 @@ import WorkIcon from '@mui/icons-material/Work';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import SchoolIcon from '@mui/icons-material/School';
 
+import CloseFriends from '../closeFriends/CloseFriends';
+
+import{ Users } from '../../dummyData'
+
 
 
 export default function Sidebar() {
@@ -76,54 +80,13 @@ export default function Sidebar() {
         </button>
         <hr className='sidebarHr'/>
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img src="/assets/person/person9.jpg" alt="..." className="sidebarFriendImg" />
-            <span className="sidebarFriendName">
-              Makhuo Jamaha
-            </span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/person8.jpeg" alt="..." className="sidebarFriendImg" />
-            <span className="sidebarFriendName">
-              Yasemin Sevinç
-            </span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/person7.jpeg" alt="..." className="sidebarFriendImg" />
-            <span className="sidebarFriendName">
-              Aslıhan Duru
-            </span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/person6.jpeg" alt="..." className="sidebarFriendImg" />
-            <span className="sidebarFriendName">
-              Mehmet Azim
-            </span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/person5.jpeg" alt="..." className="sidebarFriendImg" />
-            <span className="sidebarFriendName">
-              Perihan Durmaz
-            </span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/person4.jpeg" alt="..." className="sidebarFriendImg" />
-            <span className="sidebarFriendName">
-              Lara Özsoy
-            </span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/person3.jpeg" alt="..." className="sidebarFriendImg" />
-            <span className="sidebarFriendName">
-              Nicky Mount
-            </span>
-          </li>
-          <li className="sidebarFriend">
-            <img src="/assets/person/person2.jpeg" alt="..." className="sidebarFriendImg" />
-            <span className="sidebarFriendName">
-              Sahra Ahmadov
-            </span>
-          </li>
+
+        <h4 className='close'>Tanıyor Olabileceklerin</h4>
+
+        {Users.map(u=>(
+           <CloseFriends key={u.id} user={u}/>
+        ))}
+          
           
         </ul>
 
