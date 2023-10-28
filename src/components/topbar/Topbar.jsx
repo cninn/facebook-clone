@@ -6,12 +6,19 @@ import PersonIcon from "@mui/icons-material/Person";
 import ChatIcon from "@mui/icons-material/Chat";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 
+import { Link } from "react-router-dom";
+
 export default function Topbar() {
   return (
     <div className="topbarContainer">
       <div className="topbarLeft">
         <img src="/assets/menu.png" alt="..." className="logoImg" />
+        <Link to="/" replace={true} style={{textDecoration:"none"}}>
+
         <span className="logo">FakeBook</span>
+
+        </Link>
+    
       </div>
       <div className="topbarCenter">
         <div className="searchbar">

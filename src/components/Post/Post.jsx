@@ -13,6 +13,7 @@ export default function Post({post}) {
 
 const [like,setLike] = useState(post.like)
 const [isLiked,setIsLiked] = useState(false)
+const PF = process.env.REACT_APP_PUBLIC_FOLDER
 
 
 
@@ -28,7 +29,7 @@ const likeHandler = ()=>{
           <div className="postTopLeft">
             <img
               className="postProfileImg"
-              src={Users.filter(u=>u.id=== post.userId)[0].profilePicture}
+              src={`${PF}/${Users.filter((u) => u.id === post.userId)[0].profilePicture}`}
               alt="..."
             />
             <span className="postUserName">{Users.filter(u=>u.id=== post.userId)[0].username}</span>
@@ -41,7 +42,7 @@ const likeHandler = ()=>{
         <div className="postCenter">
           <span className="postText">{post?.desc}</span>
          
-          <img className="postImage" src={post.photo} alt="..." />
+          <img className="postImage" src={PF+post.photo} alt="..." />
         
         
         </div>

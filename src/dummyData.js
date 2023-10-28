@@ -1,52 +1,52 @@
 export const Users = [
     {
       id:1,
-      profilePicture: "assets/person/person1.jpeg",
+      profilePicture: "/person/person1.jpeg",
       username: "Safak Kocaoglu",
     },
     {
       id:2,
-      profilePicture: "assets/person/person2.jpeg",
+      profilePicture: "/person/person2.jpeg",
       username: "Janell Shrum",
     },
     {
       id:3,
-      profilePicture: "assets/person/person3.jpeg",
+      profilePicture: "/person/person3.jpeg",
       username: "Alex Durden",
     },
     {
       id:4,
-      profilePicture: "assets/person/person4.jpeg",
+      profilePicture: "/person/person4.jpeg",
       username: "Dora Hawks",
     },
     {
       id:5,
-      profilePicture: "assets/person/person5.jpeg",
+      profilePicture: "/person/person5.jpeg",
       username: "Thomas Holden",
     },
     {
       id:6,
-      profilePicture: "assets/person/person6.jpeg",
+      profilePicture: "/person/person6.jpeg",
       username: "Shirley Beauchamp",
     },
     {
       id:7,
-      profilePicture: "assets/person/person7.jpeg",
+      profilePicture: "/person/person7.jpeg",
       username: "Travis Bennett",
     },
     {
       id:8,
-      profilePicture: "assets/person/person8.jpeg",
+      profilePicture: "/person/person8.jpeg",
       username: "Kristen Thomas",
     },
     {
       id:9,
-      profilePicture: "assets/person/person9.jpg",
+      profilePicture: "/person/person9.jpg",
       username: "Gary Duty",
     },
     {
       id:10,
-      profilePicture: "assets/person/person10.jpg",
+      profilePicture: "/person/person10.jpg",
       username: "Can İnan",
     },
   ];
@@ -55,7 +55,7 @@ export const Users = [
     {
       id: 1,
       desc: "Love For All, Hatred For None.",
-      photo: "assets/post/post1.jpeg",
+      photo: "/post/post1.jpeg",
       date: "5 mins ago",
       userId: 1,
       like: 32,
@@ -64,7 +64,7 @@ export const Users = [
     {
       id: 2,
       desc: "Love For All, Hatred For None.",
-      photo: "assets/post/post2.jpeg",
+      photo: "/post/post2.jpeg",
       date: "15 mins ago",
       userId: 2,
       like: 2,
@@ -73,7 +73,7 @@ export const Users = [
     {
       id: 3,
       desc: "Every moment is a fresh beginning.",
-      photo: "assets/post/post3.jpeg",
+      photo: "/post/post3.jpeg",
       date: "1 hour ago",
       userId: 3,
       like: 61,
@@ -82,7 +82,7 @@ export const Users = [
     {
       id: 4,
       desc: "Love For All, Hatred For None.",
-      photo: "assets/post/post4.jpeg",
+      photo: "/post/post4.jpeg",
       date: "4 hours ago",
       userId: 4,
       like: 7,
@@ -91,7 +91,7 @@ export const Users = [
     {
       id: 5,
       desc: "Love For All, Hatred For None.",
-      photo: "assets/post/post5.jpeg",
+      photo: "/post/post5.jpeg",
       date: "5 hours ago",
       userId: 5,
       like: 23,
@@ -100,7 +100,7 @@ export const Users = [
     {
       id: 6,
       desc: "Love For All, Hatred For None.",
-      photo: "assets/post/post6.jpeg",
+      photo: "/post/post6.jpeg",
       date: "1 day ago",
       userId: 6,
       like: 44,
@@ -109,7 +109,7 @@ export const Users = [
     {
       id: 7,
       desc: "Never regret anything that made you smile.",
-      photo: "assets/post/post7.jpeg",
+      photo: "/post/post7.jpeg",
       date: "2 days ago",
       userId: 7,
       like: 52,
@@ -118,7 +118,7 @@ export const Users = [
     {
       id: 8,
       desc: "Love For All, Hatred For None.",
-      photo: "assets/post/post8.jpeg",
+      photo: "/post/post8.jpeg",
       date: "3 days ago",
       userId: 8,
       like: 15,
@@ -127,7 +127,7 @@ export const Users = [
     {
       id: 9,
       desc: "Change the world by being yourself.",
-      photo: "assets/post/post9.jpeg",
+      photo: "/post/post9.jpeg",
       date: "5 days ago",
       userId: 9,
       like: 11,
@@ -136,7 +136,7 @@ export const Users = [
     {
       id: 10,
       desc: "Love For All, Hatred For None.",
-      photo: "assets/post/post10.jpeg",
+      photo: "/post/post10.jpeg",
       date: "1 week ago",
       userId: 10,
       like: 104,
